@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Jwb81/friend-finder/issues"
   },
-  "homepage": "https://github.com/Jwb81/friend-finder#readme"
+  "homepage": "https://github.com/Jwb81/friend-finder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }

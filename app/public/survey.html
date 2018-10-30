@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friends Finder</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Survey Questions</h1>
+        <hr>
+        <p>Please fill in each input below to find your new friend!</p>
+    </div>
+
+    <form id='questions' style='margin-bottom: 50px;'>
+        <div class="form-group">
+            <p>Name (Required)</p>
+            <input type="text" id='name' class='form-control'>
+        </div>
+
+        <div class="form-group">
+            <p>Link to Photo Image (Required)</p>
+            <input type="text" id='photo-link' class='form-control'>
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+            <h3>Question 1:</h3>
+            <label for='q1'>Your mind is always buzzing with unexplored ideas and plans.</label>
+            <select class='form-control w-25' name="q1" id="q1">
+                <option value="0">Choose one...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 2:</h3>
+            <label for='q2'>Generally speaking, you rely more on your experience than your imagination.</label>
+            <select class='form-control w-25' name="q2" id="q2">
+                <option value="0">Choose one...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 3:</h3>
+            <label for='q3'>You find it easy to stay relaxed and focused even when there is some pressure.</label>
+            <select class='form-control w-25' name="q3" id="q3">
+                <option value="0">Choose one...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 4:</h3>
+            <label for='q4'>You rarely do something just out of sheer curiosity.</label>
+            <select class='form-control w-25' name="q4" id="q4">
+                <option value="0">Choose one...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 5:</h3>
+            <label for='q5'>People can rarely upset you.</label>
+            <select class='form-control w-25' name="q5" id="q5">
+                <option value="0">Choose one...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 6:</h3>
+            <label for='q6'>It is often difficult for you to relate to other people's feelings.</label>
+            <select class='form-control w-25' name="q6" id="q6">
+                <option value="0">Choose one...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 7:</h3>
+            <label for='q7'>In a discussion, truth should be more important than people's sensitivities.</label>
+            <select class='form-control w-25' name="q7" id="q7">
+                <option value="0">Choose one...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 8:</h3>
+            <label for='q8'>You rarely get carried away by fantasies and ideas.</label>
+            <select class='form-control w-25' name="q8" id="q8">
+                <option value="0">Choose one...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 9:</h3>
+            <label for='q9'>You think that everyone's views should be respected regardless of whether they are
+                supported by facts or
+                not.</label>
+            <select class='form-control w-25' name="q9" id="q9">
+                <option value="0">Choose one...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Question 10:</h3>
+            <label for='q10'>You feel more energetic after spending time with a group of people.</label>
+            <select class='form-control w-25' name="q10" id="q10">
+                <option value="0">Choose one...</option>
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+        </div>
+
+        <input type="submit" class="btn btn-info">
+    </form>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+        const getInputs = (evt) => {
+            // keep the form from submitting
+            evt.preventDefault()
+
+            // remove any error markings from previous submissions
+            $('#name').removeClass('border border-danger')
+            $('#photo-link').removeClass('border border-danger')
+
+            // get the name and photo url
+            const name = $('#name').val()
+            const photo = $('#photo-link').val()
+
+            // make sure the name field is filled out
+            if (!name) {
+                $('#name').addClass('border border-danger')
+                window.location = '#name'
+                return
+            }
+
+            // make sure the picture link field is filled out
+            if (!photo) {
+                $('#photo-link').addClass('border border-danger')
+                window.location = '#name'
+            }
+
+            // get an array of answers to the questions
+            let answers = $('select');
+
+            // convert to JS array from Node array
+            answers = Array.from(answers);
+
+            // make sure all select boxes have a valid answer
+            let error = false;
+            answers.forEach(obj => {
+                if ($(obj).val() == 0) {
+                    $(obj).addClass('border border-danger');
+                    error = true;
+                }
+                else {
+                    $(obj).removeClass('border border-danger');
+                }
+            })
+
+            if (error) {
+                // don't let the form submit
+                return false;
+            }
+
+            // create an array of the selected values from the options
+            answers = answers.map(obj => {
+                return obj.value;
+            })
+
+            const newUser = {
+                name: name,
+               photo: photo,
+                answers: answers
+            }
+
+            // send inputs to the server for processing
+            $.post('/api/friends', newUser, data => {
+                // should receive a link to an image and a name back from the server
+                console.log(data);
+            })
+        }
+
+        $('#questions').on('submit', getInputs);
+    </script>
+</body>
+
+</html>
