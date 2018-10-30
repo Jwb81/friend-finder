@@ -19,7 +19,7 @@ module.exports = {
         let matchObj 
 
         const userScore = user.answers.reduce((acc, cur) => acc + cur, 0)
-        console.log(userScore)
+        // console.log(userScore)
 
         // search existing users to find the closest match
         list.forEach((x, index) => {

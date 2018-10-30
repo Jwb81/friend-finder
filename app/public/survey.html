@@ -167,6 +167,19 @@
         <input type="submit" class="btn btn-info">
     </form>
 
+
+    <!-- where the compatible friend will be displayed -->
+    <div id='friend-info' class="hidden">
+        <hr>
+        <h5>Your new friend is:</h5>
+        <div class="card" style='margin-bottom: 100px; width: 18rem;'>
+            <img src="" alt="" class="card-img-top" id='friend-photo'>
+            <div class="card-body">
+                <h3 class="card-title" id='friend-name'></h3>
+            </div>
+        </div>
+    </div>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -232,8 +245,14 @@
 
             // send inputs to the server for processing
             $.post('/api/friends', newUser, data => {
+                // move the page to the new friend card
+                window.location = '#friend-info'
+                
                 // should receive a link to an image and a name back from the server
-                console.log(data);
+                $('#friend-name').text(data.name)
+                $('#friend-photo').attr('src', data.photo) 
+
+                $('#friend-info').removeClass('hidden')
             })
         }
 
